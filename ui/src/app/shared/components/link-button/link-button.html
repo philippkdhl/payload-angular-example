@@ -1,0 +1,13 @@
+<a href="{{linkUrl()}}"
+   target="{{linkExternal() ? '_blank' : '_self'}}"
+   [attr.rel]="linkExternal() ? 'noopener noreferrer' : null">
+  {{linkText()}}
+
+  @if (linkExternal()) {
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-4 h-4 ml-2">
+      <path fill-rule="evenodd" d="M21 10h-2l-.002-3.59-8.79 8.797-1.415-1.414 8.785-8.792L14 5.004l-.002-2L20.995 3zm-4 9H5V7h7V5H3v16h16v-9h-2z"
+            clip-rule="evenodd"/>
+    </svg>
+  }
+
+</a>

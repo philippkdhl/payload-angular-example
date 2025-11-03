@@ -1,0 +1,465 @@
+/* You can add global styles to this file, and also import other style files */
+@use "tailwindcss";
+@import "@dhl-official/tokens/index.css";
+
+
+:root {
+  --dui-size-theme: 1;
+
+
+  // Colors from new Design
+  // https://www.figma.com/design/Gc3G5kZLrV9Utbj0kIIZ48/DHL-Core-Tokens?node-id=2003-5&t=JKKvHYiIKPBbb1a9-0
+
+  // DHL Red
+  --dui-color-dhl-red-025: #FEFAFA;
+  --dui-color-dhl-red-050: #FDF2F2;
+  --dui-color-dhl-red-075: #FAE0E2;
+  --dui-color-dhl-red-100: #F5C4C7;
+  --dui-color-dhl-red-150: #F0A6AA;
+  --dui-color-dhl-red-200: #EA878D;
+  --dui-color-dhl-red-300: #E67077;
+  --dui-color-dhl-red-400: #E35B63;
+  --dui-color-dhl-red-500: #DC353F;
+  --dui-color-dhl-red-600: #D40511; // The primary brand color
+  --dui-color-dhl-red-650: #C30510;
+  --dui-color-dhl-red-700: #AD040E;
+  --dui-color-dhl-red-750: #95040C;
+  --dui-color-dhl-red-800: #8B030B;
+  --dui-color-dhl-red-850: #6E0309;
+  --dui-color-dhl-red-900: #4A0206;
+  --dui-color-dhl-red-950: #340104;
+
+  // Post Yellow
+  --dui-color-post-yellow-025: #FFFAE6;
+  --dui-color-post-yellow-050: #FFEDA9;
+  --dui-color-post-yellow-075: #FFE37B;
+  --dui-color-post-yellow-100: #FFCC00;
+  --dui-color-post-yellow-150: #DDB100;
+  --dui-color-post-yellow-200: #C69E00;
+  --dui-color-post-yellow-300: #B38F00;
+  --dui-color-post-yellow-400: #A68500;
+  --dui-color-post-yellow-500: #8E7100;
+  --dui-color-post-yellow-600: #7F6500;
+  --dui-color-post-yellow-650: #765E00;
+  --dui-color-post-yellow-700: #675300;
+  --dui-color-post-yellow-750: #594700;
+  --dui-color-post-yellow-800: #514000;
+  --dui-color-post-yellow-850: #403300;
+  --dui-color-post-yellow-900: #271F00;
+  --dui-color-post-yellow-950: #1B1500;
+
+  // Gray
+  --dui-color-gray-025: #FAFAFA;
+  --dui-color-gray-050: #F5F5F5;
+  --dui-color-gray-075: #EBEBEB;
+  --dui-color-gray-100: #D1D1D1;
+  --dui-color-gray-150: #B5B5B5;
+  --dui-color-gray-200: #A3A3A3;
+  --dui-color-gray-300: #949494;
+  --dui-color-gray-400: #878787;
+  --dui-color-gray-500: #757575;
+  --dui-color-gray-600: #6B6B6B;
+  --dui-color-gray-650: #616161;
+  --dui-color-gray-700: #545454;
+  --dui-color-gray-750: #474747;
+  --dui-color-gray-800: #424242;
+  --dui-color-gray-850: #333333;
+  --dui-color-gray-900: #212121;
+  --dui-color-gray-950: #141414;
+
+  // Black
+  --dui-color-black-opacity-02: rgba(0, 0, 0, 0.02);
+  --dui-color-black-opacity-04: rgba(0, 0, 0, 0.04);
+  --dui-color-black-opacity-08: rgba(0, 0, 0, 0.08);
+  --dui-color-black-opacity-18: rgba(0, 0, 0, 0.18);
+  --dui-color-black-opacity-29: rgba(0, 0, 0, 0.29);
+  --dui-color-black-opacity-36: rgba(0, 0, 0, 0.36);
+  --dui-color-black-opacity-42: rgba(0, 0, 0, 0.42);
+  --dui-color-black-opacity-47: rgba(0, 0, 0, 0.47);
+  --dui-color-black-opacity-54: rgba(0, 0, 0, 0.54);
+  --dui-color-black-opacity-58: rgba(0, 0, 0, 0.58);
+  --dui-color-black-opacity-62: rgba(0, 0, 0, 0.62);
+  --dui-color-black-opacity-67: rgba(0, 0, 0, 0.67);
+  --dui-color-black-opacity-72: rgba(0, 0, 0, 0.72);
+  --dui-color-black-opacity-74: rgba(0, 0, 0, 0.74);
+  --dui-color-black-opacity-80: rgba(0, 0, 0, 0.80);
+  --dui-color-black-opacity-87: rgba(0, 0, 0, 0.87);
+  --dui-color-black-opacity-92: rgba(0, 0, 0, 0.92);
+  --dui-color-black: #000000;
+
+}
+
+/**
+ * Tailwind
+ */
+@theme {
+
+
+  // Semantic colors (manually added from Figma as it was not in the current design tokens)
+  --color-action-foreground-text-highlight-default: #D40511;
+  --color-action-foreground-text-highlight-hover: #95040C;
+  --color-action-foreground-text-highlight-active: #6E0309;
+  --color-action-foreground-text-error: #D40511;
+
+  --color-stroke-functional-focus: var(--dui-colors-stroke-functional-focus);
+
+
+
+  // Colors
+  // Black
+  --color-black-opacity-02: var(--dui-color-black-opacity-02);
+  --color-black-opacity-04: var(--dui-color-black-opacity-04);
+  --color-black-opacity-08: var(--dui-color-black-opacity-08);
+  --color-black-opacity-18: var(--dui-color-black-opacity-18);
+  --color-black-opacity-29: var(--dui-color-black-opacity-29);
+  --color-black-opacity-36: var(--dui-color-black-opacity-36);
+  --color-black-opacity-42: var(--dui-color-black-opacity-42);
+  --color-black-opacity-47: var(--dui-color-black-opacity-47);
+  --color-black-opacity-54: var(--dui-color-black-opacity-54);
+  --color-black-opacity-58: var(--dui-color-black-opacity-58);
+  --color-black-opacity-62: var(--dui-color-black-opacity-62);
+  --color-black-opacity-67: var(--dui-color-black-opacity-67);
+  --color-black-opacity-72: var(--dui-color-black-opacity-72);
+  --color-black-opacity-74: var(--dui-color-black-opacity-74);
+  --color-black-opacity-80: var(--dui-color-black-opacity-80);
+  --color-black-opacity-87: var(--dui-color-black-opacity-87);
+  --color-black-opacity-92: var(--dui-color-black-opacity-92);
+  --color-black: #000000;
+
+  // Gray
+  --color-gray-025: var(--dui-color-gray-025);
+  --color-gray-050: var(--dui-color-gray-050);
+  --color-gray-075: var(--dui-color-gray-075);
+  --color-gray-100: var(--dui-color-gray-100);
+  --color-gray-150: var(--dui-color-gray-150);
+  --color-gray-200: var(--dui-color-gray-200);
+  --color-gray-300: var(--dui-color-gray-300);
+  --color-gray-400: var(--dui-color-gray-400);
+  --color-gray-500: var(--dui-color-gray-500);
+  --color-gray-600: var(--dui-color-gray-600);
+  --color-gray-650: var(--dui-color-gray-650);
+  --color-gray-700: var(--dui-color-gray-700);
+  --color-gray-750: var(--dui-color-gray-750);
+  --color-gray-800: var(--dui-color-gray-800);
+  --color-gray-850: var(--dui-color-gray-850);
+  --color-gray-900: var(--dui-color-gray-900);
+  --color-gray-950: var(--dui-color-gray-950);
+
+
+  // Post Yellow
+  --color-yellow-025: var(--dui-color-post-yellow-025);
+  --color-yellow-050: var(--dui-color-post-yellow-050);
+  --color-yellow-075: var(--dui-color-post-yellow-075);
+  --color-yellow-100: var(--dui-color-post-yellow-100);
+  --color-yellow-150: var(--dui-color-post-yellow-150);
+  --color-yellow-200: var(--dui-color-post-yellow-200);
+  --color-yellow-300: var(--dui-color-post-yellow-300);
+  --color-yellow-400: var(--dui-color-post-yellow-400);
+  --color-yellow-500: var(--dui-color-post-yellow-500);
+  --color-yellow-600: var(--dui-color-post-yellow-600);
+  --color-yellow-650: var(--dui-color-post-yellow-650);
+  --color-yellow-700: var(--dui-color-post-yellow-700);
+  --color-yellow-750: var(--dui-color-post-yellow-750);
+  --color-yellow-800: var(--dui-color-post-yellow-800);
+  --color-yellow-850: var(--dui-color-post-yellow-850);
+  --color-yellow-900: var(--dui-color-post-yellow-900);
+  --color-yellow-950: var(--dui-color-post-yellow-950);
+
+
+  // DHL Red
+  --color-dhl-red-025: var(--dui-color-dhl-red-025);
+  --color-dhl-red-050: var(--dui-color-dhl-red-050);
+  --color-dhl-red-075: var(--dui-color-dhl-red-075);
+  --color-dhl-red-100: var(--dui-color-dhl-red-100);
+  --color-dhl-red-150: var(--dui-color-dhl-red-150);
+  --color-dhl-red-200: var(--dui-color-dhl-red-200);
+  --color-dhl-red-300: var(--dui-color-dhl-red-300);
+  --color-dhl-red-400: var(--dui-color-dhl-red-400);
+  --color-dhl-red-500: var(--dui-color-dhl-red-500);
+  --color-dhl-red-600: var(--dui-color-dhl-red-600);
+  --color-dhl-red-650: var(--dui-color-dhl-red-650);
+  --color-dhl-red-700: var(--dui-color-dhl-red-700);
+  --color-dhl-red-750: var(--dui-color-dhl-red-750);
+  --color-dhl-red-800: var(--dui-color-dhl-red-800);
+  --color-dhl-red-850: var(--dui-color-dhl-red-850);
+  --color-dhl-red-900: var(--dui-color-dhl-red-900);
+  --color-dhl-red-950: var(--dui-color-dhl-red-950);
+
+
+  // Spacing
+  --spacing-full: var(--dui-size-space-full);
+  --spacing-1x: var(--dui-size-space-1x);
+  --spacing-2x: var(--dui-size-space-2x);
+  --spacing-3x: var(--dui-size-space-3x);
+  --spacing-4x: var(--dui-size-space-4x);
+  --spacing-5x: var(--dui-size-space-5x);
+  --spacing-6x: var(--dui-size-space-6x);
+  --spacing-7x: var(--dui-size-space-7x);
+  --spacing-8x: var(--dui-size-space-8x);
+  --spacing-9x: var(--dui-size-space-9x);
+  --spacing-10x: var(--dui-size-space-10x);
+  --spacing-11x: var(--dui-size-space-11x);
+  --spacing-12x: var(--dui-size-space-12x);
+  --spacing-16x: var(--dui-size-space-16x);
+  --spacing-20x: var(--dui-size-space-20x);
+  --spacing-24x: var(--dui-size-space-24x);
+  --spacing-32x: var(--dui-size-space-32x);
+  --spacing-40x: var(--dui-size-space-40x);
+  --spacing-48x: var(--dui-size-space-48x);
+  --spacing-50x: var(--dui-size-space-50x);
+  --spacing-56x: var(--dui-size-space-56x);
+  --spacing-64x: var(--dui-size-space-64x);
+  --spacing-72x: var(--dui-size-space-72x);
+  --spacing-80x: var(--dui-size-space-80x);
+  --spacing-1: var(--dui-size-space-1);
+  --spacing-0: var(--dui-size-space-0);
+
+
+  // Radius
+  --rounded-full: var(--dui-size-radius-full);
+  --rounded-xs: var(--dui-size-radius-xs);
+  --rounded-md: var(--dui-size-radius-md);
+  --rounded-lg: var(--dui-size-radius-lg);
+  --rounded-0: var(--dui-size-radius-0);
+
+
+  // Shadows
+  --shadow-lg-2: var(--dui-shadow-lg-2);
+  --shadow-lg-1: var(--dui-shadow-lg-1);
+  --shadow-lg-0: var(--dui-shadow-lg-0);
+  --shadow-md-2: var(--dui-shadow-md-2);
+  --shadow-md-1: var(--dui-shadow-md-1);
+  --shadow-md-0: var(--dui-shadow-md-0);
+  --shadow-sm-2: var(--dui-shadow-sm-2);
+  --shadow-sm-1: var(--dui-shadow-sm-1);
+  --shadow-sm-0: var(--dui-shadow-sm-0);
+
+  // Breakpoints
+  --breakpoint-xs: 0; /* Starting point (0px) */
+  --breakpoint-sm: 20rem; /* Average Mobile size (320px) */
+  --breakpoint-md: 48rem; /* Portrait Tablet (768px) */
+  --breakpoint-lg: 64rem; /* Landscape Tablet, or a Small Desktop (1024px) */
+  --breakpoint-xl: 85.3125rem; /* Standard Desktop size (1365px) */
+  --breakpoint-2xl: 120rem; /* Large desktop (1920px) */
+  --breakpoint-3xl: 160rem; /* Very Large desktop (2560px) */
+
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ **********************************************************************************************************
+ * Block width
+ **********************************************************************************************************
+ */
+
+.content-side-margin {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.content-wide {
+  width: 100%;
+  max-width: 74.813rem;
+}
+
+.content-narrow {
+  width: 100%;
+  max-width: 55.813rem;
+}
+
+.content-background {
+  width: 100%;
+  max-width: 85.3125rem;
+}
+
+
+/* Landscape Tablet, or a Small Desktop (1024px) */
+@media (max-width: 64rem) {
+  .content-wide {
+    max-width: 58.75rem;
+  }
+
+  .content-narrow {
+    max-width: 43.688rem;
+  }
+
+  .content-background {
+    max-width: 64rem;
+  }
+}
+
+
+/* Portrait Tablet (768px) */
+@media (max-width: 48rem) {
+  .content-wide {
+    max-width: 42.75rem;
+  }
+
+  .content-narrow {
+    max-width: 42.75rem;
+  }
+
+  .content-background {
+    max-width: 48rem;
+  }
+}
+
+/* Average Mobile size (320px) */
+@media (max-width: 20rem) {
+  .content-wide {
+    max-width: 17.375rem;
+  }
+
+  .content-narrow {
+    max-width: 17.375rem;
+  }
+
+  .content-background {
+    max-width: 20rem;
+  }
+}
+
+
+/**
+ **********************************************************************************************************
+ * Links
+ **********************************************************************************************************
+ */
+a.underlined {
+  text-decoration: underline;
+  color: #D40511;
+  display: inline-flex;
+  align-items: center;
+}
+
+a.underlined:hover {
+  color: var(--dui-color-dhl-red-750);
+}
+
+a.underlined:active {
+  color: var(--dui-color-dhl-red-850);
+}
+
+a.underlined:focus-visible {
+  border-radius: var(--dui-size-2x);
+  outline: 2px solid var(--dui-colors-stroke-functional-focus);
+}
+
+a.underlined svg {
+  display: inline-block;
+}
+
+
+/**
+ **********************************************************************************************************
+ * Lists
+ **********************************************************************************************************
+ */
+ul.bulletlist {
+  list-style-type: disc;
+  margin: 0.5rem 1.25rem;
+}
+
+ul.bulletlist li {
+  position: relative;
+  margin-bottom: var(--spacing-1x);
+}
+
+ol.numbered {
+  list-style-type: decimal;
+  padding-left: var(--spacing-6x);
+  margin: 0.25rem;
+
+  li {
+    margin-bottom: var(--spacing-1x);
+    padding-left: var(--spacing-2x);
+  }
+}
+
+/**
+ **********************************************************************************************************
+ * Headline styles (keep independent from h1-h6 for accessibility reasons)
+ **********************************************************************************************************
+ */
+
+.headline48px {
+  font-weight: 700;
+  padding: 2rem 0 1rem 0;
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.headline32px {
+  font-weight: 700;
+  padding: 2rem 0 1rem 0;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.headline24px {
+  font-weight: 700;
+  padding: 1.5rem 0 0.75rem 0;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.headline20px {
+  font-weight: 700;
+  padding: 1.3rem 0 0.75rem 0;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+}
+
+.headline16px {
+  font-weight: 700;
+  padding: 1rem 0 0.75rem 0;
+  font-size: 1rem;
+  line-height: 1.3rem;
+}
+
+.headline12px {
+  font-weight: 700;
+  padding: 0.75rem 0 0.75rem 0;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+@media (max-width: 48rem) {
+
+  .headline48px {
+    font-size: 1.5rem; /* 24px */
+    line-height: 2.5rem;
+    padding: 1.2rem 0 0.7rem 0;
+  }
+
+  .headline32px {
+    font-size: 1.3rem; /* 20px */
+    line-height: 1.8rem;
+    padding: 1rem 0 0.6rem 0;
+  }
+  .headline24px {
+    font-size: 1.1rem; /* 18px */
+    line-height: 1.4rem;
+    padding: 0.8rem 0 0.5rem 0;
+  }
+  .headline20px {
+    font-size: 1rem; /* 16px */
+    line-height: 1.2rem;
+    padding: 0.7rem 0 0.4rem 0;
+  }
+  .headline16px {
+    font-size: 0.9rem; /* 14px */
+    line-height: 1rem;
+    padding: 0.6rem 0 0.4rem 0;
+  }
+  .headline12px {
+    font-size: 0.7rem;
+    line-height: 0.9rem;
+    padding: 0.5rem 0 0.3rem 0;
+  }
+}

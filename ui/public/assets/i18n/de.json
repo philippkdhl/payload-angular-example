@@ -1,0 +1,11 @@
+{
+  "faq-page.not-found" : "FAQ wurde nicht gefunden. Bitte befüllen Sie die Pflichtfelder und laden Sie die Seite neu.",
+  "faq-page.parsing-problem" : "FAQ konnte nicht geladen werden. ",
+  "general.faq" : "FAQ",
+  "general.related-topics" : "Weiterführende Themen",
+	"header.logout": "Abmelden",
+	"header.you-are-here": "Sie befinden sich hier:",
+  "navigation.main-menu" : "Hauptnavigation",
+  "table-of-contents.direct-to" : "Direkt zu:",
+  "table-of-contents.navigation-label" : "Inhaltsverzeichnis Navigation"
+}

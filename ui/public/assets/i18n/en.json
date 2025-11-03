@@ -1,0 +1,11 @@
+{
+  "faq-page.not-found" : "FAQ was not found. Please fill in the required fields and reload the page.",
+  "faq-page.parsing-problem" : "FAQ could not be loaded.",
+  "general.faq" : "FAQ",
+  "general.related-topics" : "Related topics",
+	"header.logout": "Logout",
+	"header.you-are-here": "You are here:",
+  "navigation.main-menu" : "Main navigation",
+  "table-of-contents.direct-to" : "Jump to:",
+  "table-of-contents.navigation-label" : "Table of contents navigation"
+}

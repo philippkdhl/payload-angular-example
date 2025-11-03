@@ -1,0 +1,6 @@
+{
+  "_COMMENT": "WHEN EDITING THIS FILE, PLEASE CHANGE TODO/set-config-json.sh ACCORDINGLY!!!!",
+  "loggingLevel": 2,
+  "applicationEnvironment": "local",
+  "twoMhGateway": "http://localhost:8081"
+}
